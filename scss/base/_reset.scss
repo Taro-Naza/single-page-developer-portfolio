@@ -1,0 +1,39 @@
+// Reset
+:root {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	color-scheme: light dark;
+}
+
+body {
+	font-size: 1.6rem;
+	min-height: 100vh;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img,
+picture,
+video,
+svg {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
