@@ -1,0 +1,86 @@
+//----------------------------------------------------------------//
+//                              FONT IMPORTS                      //
+//----------------------------------------------------------------//
+
+@font-face {
+	font-family: 'SpaceGrotesk';
+	src: url('../../assets/fonts/static/SpaceGrotesk-Bold.ttf') format(truetype);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'SpaceGrotesk';
+	src: url('../../assets/fonts/static/SpaceGrotesk-Medium.ttf')
+		format(truetype);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'SpaceGrotesk';
+	src: url('../../assets/fonts/static/SpaceGrotesk-Regular.ttf')
+		format(truetype);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'SpaceGrotesk';
+	src: url('../../assets/fonts/static/SpaceGrotesk-Light.ttf')
+		format(truetype);
+	font-weight: 300;
+}
+
+//----------------------------------------------------------------//
+//                            FONT FAMILY                         //
+//----------------------------------------------------------------//
+$font-family: 'SpaceGrotesk', sans-serif;
+
+//----------------------------------------------------------------//
+//                            FONT WEIGHT                         //
+//----------------------------------------------------------------//
+$fw-bold: 700;
+$fw-medium: 500;
+$fw-regular: 400;
+$fw-light: 300;
+
+//----------------------------------------------------------------//
+//                                COLORS                          //
+//----------------------------------------------------------------//
+$black: #151515;
+$green: #4ee1a0;
+$gray: #242424;
+$gray-white: #d9d9d9;
+$white: #fff;
+
+//----------------------------------------------------------------//
+//                           BREAKPOINTS                          //
+//----------------------------------------------------------------//
+$Breakpoints: (
+	'tablet': 768px,
+	'desktop': 1440px,
+);
+
+//----------------------------------------------------------------//
+//                    DEVICE SPECIFIC (MOBILE)                    //
+//----------------------------------------------------------------//
+// HEADING XL
+$h-xl-fs: 4rem;
+$h-xl-lh: 4rem;
+$h-xl-ls: -0.13rem;
+$h-xl-fw: $fw-bold;
+// HEADING L
+$h-l-fs: 4.2rem;
+$h-l-lh: 4rem;
+$h-l-ls: -0.1rem;
+$h-l-fw: $fw-bold;
+// HEADING M
+$h-m-fs: 2.4rem;
+$h-m-lh: 3.2rem;
+$h-m-fw: $fw-bold;
+// text L
+$t-l-fs: 1.8rem;
+$t-l-lh: 2.8rem;
+$t-l-fw: $fw-medium;
+// text S
+$t-s-fs: 1.6rem;
+$t-s-lh: 2.6rem;
+$t-s-fw: $fw-medium;
