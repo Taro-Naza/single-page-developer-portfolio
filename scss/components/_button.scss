@@ -1,0 +1,13 @@
+.button {
+	@include typography($t-s-fs, $t-s-fw, $t-s-lh);
+	color: $gray-white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-bottom: 1rem;
+	border-bottom: 0.2rem solid $green;
+	transition: color 200ms ease-in;
+}
+
+.button:hover {
+	color: $green;
+}
