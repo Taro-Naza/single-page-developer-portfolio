@@ -1,0 +1,20 @@
+.header {
+	width: 40%;
+	text-align: center;
+	margin: 0 auto;
+
+	&__logo {
+		@include typography($h-m-fs, $h-m-fw, $h-m-lh);
+		margin: 2rem 0;
+	}
+
+	&__social-list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__social-icon {
+		width: 2rem;
+		height: 2rem;
+	}
+}
