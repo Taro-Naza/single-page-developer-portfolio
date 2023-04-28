@@ -5,7 +5,7 @@
 
 	&__logo {
 		@include typography($h-m-fs, $h-m-fw, $h-m-lh);
-		margin: 2rem 0;
+		padding: 2rem 0;
 	}
 
 	&__social-list {
