@@ -60,4 +60,11 @@
 			right: -7rem;
 		}
 	}
+
+	&__separator {
+		margin: 8rem 2rem 0;
+		width: calc(100% - 4rem);
+		height: 0.1rem;
+		background-color: $white;
+	}
 }
