@@ -1,0 +1,48 @@
+.project-card {
+	margin: 4rem auto;
+
+	&__project-image {
+		position: relative;
+
+		&:hover .project-card__image-overlay {
+			opacity: 1;
+		}
+	}
+
+	&__image {
+		margin-bottom: 2rem;
+	}
+
+	&__image-overlay {
+		background-color: $black-overlay;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 4.8rem;
+		opacity: 0;
+		transition: opacity 200ms ease-in;
+	}
+
+	&__heading {
+		@include typography($h-m-fs, $h-m-fw, $h-m-lh, $h-l-ls);
+		margin-bottom: 0.7rem;
+	}
+
+	&__skill-tag {
+		@include typography($t-l-fs, $t-l-fw, $t-l-lh);
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+		margin-right: 1.8rem;
+		display: inline-block;
+	}
+
+	&__button-left {
+		margin-right: 3rem;
+	}
+}
