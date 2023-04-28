@@ -1,0 +1,16 @@
+.skill {
+	text-align: center;
+	margin-bottom: 2.4rem;
+
+	&__heading {
+		@include typography($h-l-fs, $h-l-fw, $h-l-lh, $h-l-ls);
+	}
+
+	&__experience {
+		@include typography($t-s-fs, $t-s-fw, $t-s-lh);
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+}
