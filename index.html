@@ -15,7 +15,9 @@
 		<title>Frontend Mentor | Single-page developer portfolio</title>
 	</head>
 	<body>
+		<!-- Header section start -->
 		<header>
+			<!-- Header start -->
 			<div class="header">
 				<div class="header__logo">adamkeyes</div>
 				<div class="header__social">
@@ -74,6 +76,53 @@
 					</ul>
 				</div>
 			</div>
+			<!-- Header start -->
+
+			<!-- Hero section start -->
+			<div class="hero">
+				<div class="hero__image">
+					<img
+						src="./assets/images/image-profile-tablet.webp"
+						srcset="
+							./assets/images/image-profile-mobile.webp   768w,
+							./assets/images/image-profile-tablet.webp   800w,
+							./assets/images/image-profile-desktop.webp 1000w
+						"
+						alt="Photo of Adam Keyes smiling"
+					/>
+				</div>
+
+				<div class="hero__content">
+					<h1 class="hero__content-heading">
+						<span class="hero__content-heading-line">
+							Nice to
+						</span>
+						<span class="hero__content-heading-line">
+							meet you! I'm
+						</span>
+						<span
+							class="hero__content-heading-line hero__content-heading-line--underline"
+						>
+							Adam Keyes.
+						</span>
+					</h1>
+					<p class="hero__content-text">
+						Based in the UK, I'm a front-end developer passionate
+						about building accessible web apps that users love.
+					</p>
+					<a href="" class="button">contact me</a>
+				</div>
+
+				<div class="hero__decoration-ring">
+					<img src="./assets/images/pattern-rings.svg" alt="" />
+				</div>
+				<div class="hero__decoration-circle">
+					<img src="./assets/images/pattern-circle.svg" alt="" />
+				</div>
+			</div>
+			<!-- Hero section start -->
+			<div class="separator"></div>
 		</header>
+		<!-- Header section end -->
 	</body>
 </html>

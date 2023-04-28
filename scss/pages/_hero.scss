@@ -1,0 +1,63 @@
+.hero {
+	margin-top: -9.2rem;
+	text-align: center;
+	position: relative;
+	overflow-x: hidden;
+
+	&__image {
+		width: 45%;
+		height: 38.3rem;
+		margin: 0 auto 4rem;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: scale-down;
+		}
+	}
+
+	&__content {
+		padding: 0 1.6rem;
+		position: relative;
+
+		&-heading {
+			@include typography($h-xl-fs, $h-xl-fw, $h-xl-lh, $h-xl-ls);
+			margin-bottom: 2.4rem;
+
+			&-line {
+				position: relative;
+
+				&--underline::after {
+					content: '';
+					height: 0.4rem;
+					width: 100%;
+					background-color: $green;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+				}
+			}
+		}
+
+		&-text {
+			width: 100%;
+			@include typography($t-s-fs, $t-s-fw, $t-s-lh);
+			color: $gray-white;
+			margin-bottom: 2.4rem;
+		}
+	}
+
+	&__decoration {
+		&-ring {
+			position: absolute;
+			top: 13rem;
+			left: -32rem;
+			z-index: -1;
+		}
+		&-circle {
+			position: absolute;
+			top: 24.5rem;
+			right: -7rem;
+		}
+	}
+}
