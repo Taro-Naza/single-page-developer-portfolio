@@ -1,0 +1,12 @@
+.projects {
+	padding: 1rem 1.6rem 0;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+
+		&-heading {
+			@include typography($h-xl-fs, $h-xl-fw, $h-xl-lh, $h-xl-ls);
+		}
+	}
+}
