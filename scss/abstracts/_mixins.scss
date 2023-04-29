@@ -9,3 +9,17 @@
 	line-height: $line-height;
 	letter-spacing: $letter-spacing;
 }
+
+@mixin media($device) {
+	@if ($device == 'tablet') {
+		@media screen and (min-width: map-get($breakpoints, 'tablet')) {
+			@content;
+		}
+	}
+
+	@if ($device == 'desktop') {
+		@media screen and (min-width: map-get($breakpoints, 'desktop')) {
+			@content;
+		}
+	}
+}
