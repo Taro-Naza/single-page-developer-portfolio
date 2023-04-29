@@ -1,0 +1,42 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: calc(3.2rem - 1.1rem);
+
+	&__label {
+		visibility: hidden;
+	}
+
+	&__input {
+		font-family: $font-family;
+		@include typography($t-s-fs, $t-s-fw, $t-s-lh);
+		background-color: $gray;
+		opacity: 0.5;
+
+		width: 100%;
+		height: 4.3rem;
+		border: none;
+		border-bottom: 0.1rem solid $white;
+	}
+
+	&__input--large {
+		height: 10.7rem;
+		resize: none;
+		border: none;
+	}
+
+	&__input::placeholder {
+		font-family: $font-family;
+		padding-left: 2.4rem;
+		color: $white;
+	}
+
+	&__submit {
+		background-color: transparent;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		margin-top: 2.1rem;
+		align-self: end;
+	}
+}
