@@ -1,8 +1,8 @@
 .button {
-	@include typography($t-s-fs, $t-s-fw, $t-s-lh);
-	color: $gray-white;
+	@include typography($b-fs, $b-fw, $b-lh);
 	text-decoration: none;
 	text-transform: uppercase;
+	color: $gray-white;
 	padding-bottom: 1rem;
 	border-bottom: 0.2rem solid $green;
 	display: inline-block;
