@@ -1,0 +1,31 @@
+.contact {
+	text-align: center;
+	background-color: $gray;
+	margin-top: 10rem;
+	padding: 6rem 1.6rem 0;
+	position: relative;
+
+	&__text-heading {
+		@include typography($h-xl-fs, $h-xl-fw, $h-xl-lh, $h-xl-ls);
+		margin-bottom: 2rem;
+	}
+
+	&__text-paragraph {
+		@include typography($t-s-fs, $t-s-fw, $t-s-lh);
+		margin-bottom: 5rem;
+	}
+
+	&__decoration-ring {
+		height: 8rem;
+		position: absolute;
+		left: -30rem;
+		bottom: 15rem;
+	}
+
+	&__separator {
+		margin: 8rem 2rem 0;
+		width: calc(100% - 4rem);
+		height: 0.1rem;
+		background-color: $white;
+	}
+}
