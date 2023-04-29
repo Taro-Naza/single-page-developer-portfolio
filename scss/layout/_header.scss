@@ -8,9 +8,20 @@ header .header {
 	text-align: center;
 	margin: 0 auto;
 
+	@include media('tablet') {
+		width: calc(100% - 6rem);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	&__logo {
 		@include typography($h-m-fs, $h-m-fw, $h-m-lh);
 		padding: 2rem 0;
+
+		@include media('tablet') {
+			@include typography($l-t-fs, $l-t-fw, $l-t-lh, $l-t-ls);
+		}
 	}
 
 	&__social-list {
@@ -21,5 +32,11 @@ header .header {
 	&__social-icon {
 		width: 2rem;
 		height: 2rem;
+
+		@include media('tablet') {
+			width: 2.4rem;
+			height: 2.4rem;
+			margin-left: 3.2rem;
+		}
 	}
 }
