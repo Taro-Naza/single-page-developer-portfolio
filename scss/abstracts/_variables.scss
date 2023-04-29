@@ -86,3 +86,35 @@ $t-s-fw: $fw-medium;
 $b-fs: 1.6rem;
 $b-lh: 2.6rem;
 $b-fw: $fw-bold;
+
+//----------------------------------------------------------------//
+//                    DEVICE SPECIFIC (tablet)                    //
+//----------------------------------------------------------------//
+// HEADING XL
+$h-xl-t-fs: 7.2rem;
+$h-xl-t-lh: 7.2rem;
+$h-xl-t-ls: -0.2rem;
+$h-xl-t-fw: $fw-bold;
+// HEADING L
+$h-l-t-fs: 4.8rem;
+$h-l-t-lh: 5.6rem;
+$h-l-t-ls: -0.15rem;
+$h-l-t-fw: $fw-bold;
+// HEADING M
+$h-m-t-fs: 2.4rem;
+$h-m-t-lh: 3.2rem;
+$h-m-t-fw: $fw-bold;
+// text L
+$t-l-t-fs: 1.8rem;
+$t-l-t-lh: 2.8rem;
+$t-l-t-fw: $fw-medium;
+// Button
+$b-t-fs: 1.6rem;
+$b-t-lh: 2.6rem;
+$b-t-ls: -0.228rem;
+$b-t-fw: $fw-bold;
+// Logo
+$l-t-fs: 3.2rem;
+$l-t-lh: 3.2rem;
+$l-t-ls: -0.04rem;
+$l-t-fw: $fw-bold;
