@@ -1,6 +1,11 @@
 .projects {
 	padding: 1rem 1.6rem 0;
 
+	@include media('desktop') {
+		max-width: 111rem;
+		margin: 0 auto;
+	}
+
 	&__header {
 		display: flex;
 		justify-content: space-between;
@@ -16,6 +21,15 @@
 					$h-xl-t-ls
 				);
 			}
+
+			@include media('desktop') {
+				@include typography(
+					$h-xl-d-fs,
+					$h-xl-d-fw,
+					$h-xl-d-lh,
+					$h-xl-d-ls
+				);
+			}
 		}
 	}
 
@@ -27,11 +41,20 @@
 			flex-wrap: wrap;
 			gap: 6rem 2.4rem;
 		}
+
+		@include media('desktop') {
+			margin-top: 8rem;
+			gap: 6.9rem 3rem;
+		}
 	}
 
 	&__item {
 		@include media('tablet') {
 			width: calc(50% - 1.2rem);
+		}
+
+		@include media('desktop') {
+			width: calc(50% - 1.5rem);
 		}
 	}
 }
