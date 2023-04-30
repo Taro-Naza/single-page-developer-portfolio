@@ -45,6 +45,10 @@ header .header {
 	&__social-list {
 		display: flex;
 		justify-content: space-between;
+
+		@include media('desktop') {
+			margin: 3rem;
+		}
 	}
 
 	&__social-icon {
