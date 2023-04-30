@@ -21,6 +21,10 @@ header .header {
 	text-align: center;
 	margin: 0 auto;
 
+	@include media('desktop') {
+		max-width: 111rem;
+	}
+
 	@include media('tablet') {
 		width: calc(100% - 6rem);
 		display: flex;
