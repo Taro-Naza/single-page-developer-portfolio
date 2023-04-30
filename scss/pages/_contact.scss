@@ -10,9 +10,11 @@
 	}
 
 	&__wrapper {
-		max-width: 111rem;
-		display: flex;
-		margin: 0 auto;
+		@include media('desktop') {
+			max-width: 111rem;
+			display: flex;
+			margin: 0 auto;
+		}
 	}
 
 	&__text {
