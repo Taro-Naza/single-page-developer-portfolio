@@ -46,6 +46,12 @@
 		display: inline-block;
 	}
 
+	& .button {
+		@include media('desktop') {
+			display: none;
+		}
+	}
+
 	&__button-left {
 		margin-right: 3rem;
 	}
