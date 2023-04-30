@@ -3,6 +3,13 @@
 	position: relative;
 	overflow-x: hidden;
 
+	@include media('tablet') {
+		padding: 4rem 3rem 5rem;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
 	&__decoration-ring {
 		position: absolute;
 		right: -35rem;
@@ -14,5 +21,9 @@
 		width: calc(100% - 4rem);
 		height: 0.1rem;
 		background-color: $white;
+
+		@include media('tablet') {
+			display: none;
+		}
 	}
 }
