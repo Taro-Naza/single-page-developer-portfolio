@@ -1,5 +1,9 @@
 .project-card {
-	margin: 4rem auto;
+	margin: 4rem auto 0;
+
+	@include media('tablet') {
+		margin: 0;
+	}
 
 	&__project-image {
 		position: relative;
@@ -49,4 +53,8 @@
 
 .project-card:last-of-type {
 	margin: 4rem auto 0;
+
+	@include media('tablet') {
+		margin: 0;
+	}
 }
