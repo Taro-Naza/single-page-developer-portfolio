@@ -8,11 +8,21 @@
 	&__text-heading {
 		@include typography($h-xl-fs, $h-xl-fw, $h-xl-lh, $h-xl-ls);
 		margin-bottom: 2rem;
+
+		@include media('tablet') {
+			@include typography($h-xl-t-fs, $h-xl-t-fw, $h-xl-t-lh, $h-xl-t-ls);
+		}
 	}
 
 	&__text-paragraph {
 		@include typography($t-s-fs, $t-s-fw, $t-s-lh);
 		margin-bottom: 5rem;
+
+		@include media('tablet') {
+			width: 55%;
+			margin: 0 auto 4rem;
+			@include typography($t-l-t-fs, $t-l-t-fw, $t-l-t-lh);
+		}
 	}
 
 	&__decoration-ring {
@@ -20,6 +30,11 @@
 		position: absolute;
 		left: -30rem;
 		bottom: 15rem;
+
+		@include media('tablet') {
+			left: -35rem;
+			bottom: 8rem;
+		}
 	}
 
 	&__separator {
@@ -27,5 +42,9 @@
 		width: calc(100% - 4rem);
 		height: 0.1rem;
 		background-color: $white;
+
+		@include media('tablet') {
+			margin: 9.2rem 2rem 0;
+		}
 	}
 }
