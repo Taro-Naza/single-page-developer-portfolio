@@ -5,23 +5,58 @@
 	padding: 6rem 1.6rem 0;
 	position: relative;
 
-	&__text-heading {
-		@include typography($h-xl-fs, $h-xl-fw, $h-xl-lh, $h-xl-ls);
-		margin-bottom: 2rem;
-
-		@include media('tablet') {
-			@include typography($h-xl-t-fs, $h-xl-t-fw, $h-xl-t-lh, $h-xl-t-ls);
-		}
+	@include media('desktop') {
+		text-align: left;
 	}
 
-	&__text-paragraph {
-		@include typography($t-s-fs, $t-s-fw, $t-s-lh);
-		margin-bottom: 5rem;
+	&__wrapper {
+		max-width: 111rem;
+		display: flex;
+		margin: 0 auto;
+	}
 
-		@include media('tablet') {
-			width: 55%;
-			margin: 0 auto 4rem;
-			@include typography($t-l-t-fs, $t-l-t-fw, $t-l-t-lh);
+	&__text {
+		@include media('desktop') {
+			flex: 1;
+		}
+
+		&-heading {
+			@include typography($h-xl-fs, $h-xl-fw, $h-xl-lh, $h-xl-ls);
+			margin-bottom: 2rem;
+
+			@include media('tablet') {
+				@include typography(
+					$h-xl-t-fs,
+					$h-xl-t-fw,
+					$h-xl-t-lh,
+					$h-xl-t-ls
+				);
+			}
+
+			@include media('desktop') {
+				@include typography(
+					$h-xl-d-fs,
+					$h-xl-d-fw,
+					$h-xl-d-lh,
+					$h-xl-d-ls
+				);
+			}
+		}
+
+		&-paragraph {
+			@include typography($t-s-fs, $t-s-fw, $t-s-lh);
+			margin-bottom: 5rem;
+
+			@include media('tablet') {
+				width: 55%;
+				margin: 0 auto 4rem;
+				@include typography($t-l-t-fs, $t-l-t-fw, $t-l-t-lh);
+			}
+
+			@include media('desktop') {
+				margin: 0 0 4rem;
+				width: 80%;
+			}
 		}
 	}
 
@@ -34,6 +69,11 @@
 		@include media('tablet') {
 			left: -35rem;
 			bottom: 8rem;
+		}
+
+		@include media('desktop') {
+			left: -20rem;
+			bottom: 23rem;
 		}
 	}
 

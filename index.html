@@ -450,46 +450,47 @@
 
 			<!-- Contact section start -->
 			<section class="contact">
-				<div class="contact__text">
-					<h2 class="contact__text-heading">Contact</h2>
-					<p class="contact__text-paragraph">
-						I would love to hear about your project and how I could
-						help. Please fill in the form, and I’ll get back to you
-						as soon as possible.
-					</p>
+				<div class="contact__wrapper">
+					<div class="contact__text">
+						<h2 class="contact__text-heading">Contact</h2>
+						<p class="contact__text-paragraph">
+							I would love to hear about your project and how I
+							could help. Please fill in the form, and I’ll get
+							back to you as soon as possible.
+						</p>
+					</div>
+
+					<form class="form">
+						<label class="form__label" for="name">name</label>
+						<input
+							class="form__input"
+							id="name"
+							type="text"
+							placeholder="NAME"
+						/>
+
+						<label class="form__label" for="email">email</label>
+						<input
+							class="form__input"
+							id="email"
+							type="email"
+							placeholder="EMAIL"
+						/>
+
+						<label class="form__label" for="message">message</label>
+						<textarea
+							class="form__input form__input--large"
+							name="MESSAGE"
+							id="message"
+							cols="30"
+							rows="10"
+							placeholder="MESSAGES"
+						></textarea>
+						<button class="form__submit button" type="submit">
+							send message
+						</button>
+					</form>
 				</div>
-
-				<form class="form">
-					<label class="form__label" for="name">name</label>
-					<input
-						class="form__input"
-						id="name"
-						type="text"
-						placeholder="NAME"
-					/>
-
-					<label class="form__label" for="email">email</label>
-					<input
-						class="form__input"
-						id="email"
-						type="email"
-						placeholder="EMAIL"
-					/>
-
-					<label class="form__label" for="message">message</label>
-					<textarea
-						class="form__input form__input--large"
-						name="MESSAGE"
-						id="message"
-						cols="30"
-						rows="10"
-						placeholder="MESSAGES"
-					></textarea>
-
-					<button class="form__submit button" type="submit">
-						send message
-					</button>
-				</form>
 
 				<div class="contact__separator"></div>
 
