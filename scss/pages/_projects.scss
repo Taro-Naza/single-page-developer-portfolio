@@ -7,6 +7,31 @@
 
 		&-heading {
 			@include typography($h-xl-fs, $h-xl-fw, $h-xl-lh, $h-xl-ls);
+
+			@include media('tablet') {
+				@include typography(
+					$h-xl-t-fs,
+					$h-xl-t-fw,
+					$h-xl-t-lh,
+					$h-xl-t-ls
+				);
+			}
+		}
+	}
+
+	&__list {
+		@include media('tablet') {
+			margin-top: 6rem;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 6rem 2.4rem;
+		}
+	}
+
+	&__item {
+		@include media('tablet') {
+			width: calc(50% - 1.2rem);
 		}
 	}
 }
