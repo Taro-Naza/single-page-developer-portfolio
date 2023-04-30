@@ -8,6 +8,11 @@
 		margin-bottom: 5.2rem;
 	}
 
+	@include media('desktop') {
+		flex-basis: 33%;
+		margin-bottom: 5.8rem;
+	}
+
 	&__heading {
 		@include typography($h-l-fs, $h-l-fw, $h-l-lh, $h-l-ls);
 
