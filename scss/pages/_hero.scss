@@ -66,21 +66,8 @@
 					display: block;
 				}
 
-				&--underline::after {
-					content: '';
-					height: 0.4rem;
-					width: 100%;
-					background-color: $green;
-					position: absolute;
-					bottom: 0;
-					right: 0;
-
-					@include media('tablet') {
-						width: 90%;
-						height: 0.6rem;
-						left: 0;
-						bottom: -0.8rem;
-					}
+				&--underline {
+					border-bottom: 4px solid $green;
 				}
 			}
 		}
