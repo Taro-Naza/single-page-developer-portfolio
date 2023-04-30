@@ -2,6 +2,13 @@ header {
 	@include media('tablet') {
 		height: 66rem;
 	}
+
+	@include media('desktop') {
+		width: 100%;
+		max-width: 111rem;
+		height: 82rem;
+		margin: 0 auto;
+	}
 }
 
 header .header {
@@ -19,6 +26,11 @@ header .header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	@include media('desktop') {
+		width: 100%;
+		padding-top: 2rem;
 	}
 
 	&__logo {
