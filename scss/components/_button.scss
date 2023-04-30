@@ -7,6 +7,10 @@
 	border-bottom: 0.2rem solid $green;
 	display: inline-block;
 	transition: color 200ms ease-in;
+
+	@include media('tablet') {
+		align-self: center;
+	}
 }
 
 .button:hover {
