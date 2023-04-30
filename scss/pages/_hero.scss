@@ -156,7 +156,8 @@
 		}
 
 		@include media('desktop') {
-			margin: 10rem 2rem 0;
+			width: 100%;
+			margin: 10rem 0 0;
 		}
 	}
 }
