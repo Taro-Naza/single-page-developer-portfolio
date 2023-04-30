@@ -2,12 +2,26 @@
 	text-align: center;
 	margin-bottom: 2.4rem;
 
+	@include media('tablet') {
+		flex-basis: 50%;
+		text-align: initial;
+		margin-bottom: 5.2rem;
+	}
+
 	&__heading {
 		@include typography($h-l-fs, $h-l-fw, $h-l-lh, $h-l-ls);
+
+		@include media('tablet') {
+			@include typography($h-l-t-fs, $h-l-t-fw, $h-l-t-lh, $h-l-t-ls);
+		}
 	}
 
 	&__experience {
 		@include typography($t-s-fs, $t-s-fw, $t-s-lh);
+
+		@include media('tablet') {
+			@include typography($t-l-t-fs, $t-l-fw, $t-l-t-lh);
+		}
 	}
 
 	&:last-of-type {
