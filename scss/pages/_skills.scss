@@ -10,10 +10,22 @@
 		flex-wrap: wrap;
 	}
 
+	@include media('desktop') {
+		padding: 7.2rem 0 14rem;
+		max-width: 111rem;
+		margin: 0 auto;
+		overflow: initial;
+	}
+
 	&__decoration-ring {
 		position: absolute;
 		right: -35rem;
 		bottom: 1rem;
+
+		@include media('desktop') {
+			right: -40rem;
+			bottom: 13rem;
+		}
 	}
 
 	&__separator {
