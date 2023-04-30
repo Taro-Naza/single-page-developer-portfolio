@@ -3,6 +3,11 @@
 	flex-direction: column;
 	gap: calc(3.2rem - 1.1rem);
 
+	@include media('tablet') {
+		width: 55%;
+		margin: 0 auto;
+	}
+
 	&__label {
 		visibility: hidden;
 	}
@@ -12,7 +17,6 @@
 		@include typography($t-s-fs, $t-s-fw, $t-s-lh);
 		background-color: $gray;
 		opacity: 0.5;
-
 		width: 100%;
 		height: 4.3rem;
 		border: none;
@@ -23,6 +27,10 @@
 		height: 10.7rem;
 		resize: none;
 		border: none;
+
+		@include media('tablet') {
+			border-bottom: 0.1rem solid $white;
+		}
 	}
 
 	&__input::placeholder {
