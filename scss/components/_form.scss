@@ -25,22 +25,29 @@
 		height: 4.3rem;
 		border: none;
 		border-bottom: 0.1rem solid $white;
-	}
-
-	&__input--large {
-		height: 10.7rem;
-		resize: none;
-		border: none;
-
-		@include media('tablet') {
-			border-bottom: 0.1rem solid $white;
-		}
-	}
-
-	&__input::placeholder {
-		font-family: $font-family;
 		padding-left: 2.4rem;
-		color: $white;
+		transition: border 200ms ease-in;
+
+		&--large {
+			height: 10.7rem;
+			resize: none;
+			border: none;
+
+			@include media('tablet') {
+				border-bottom: 0.1rem solid $white;
+			}
+		}
+
+		::placeholder {
+			font-family: $font-family;
+			padding-left: 2.4rem;
+			color: $white;
+		}
+
+		&:focus {
+			outline: none;
+			border-bottom-color: $green;
+		}
 	}
 
 	&__submit {
