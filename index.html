@@ -469,33 +469,56 @@
 					</div>
 
 					<form class="form">
-						<label class="form__label" for="name"> name </label>
-						<input
-							class="form__input"
-							id="name"
-							type="text"
-							placeholder="NAME"
-						/>
+						<div class="form__group">
+							<label class="form__label" for="name"> name </label>
+							<input
+								class="form__input"
+								id="name"
+								type="text"
+								placeholder="NAME"
+							/>
+						</div>
 
-						<label class="form__label" for="email"> email </label>
-						<input
-							class="form__input"
-							id="email"
-							type="email"
-							placeholder="EMAIL"
-						/>
+						<div class="form__group">
+							<label class="form__label" for="email">
+								email
+							</label>
+							<input
+								class="form__input"
+								id="email"
+								type="email"
+								placeholder="EMAIL"
+							/>
+							<div class="form__input-error">
+								<img
+									class="form__input-error-icon"
+									src="./assets/images/error.svg"
+									alt="error icon"
+									role="none"
+								/>
+								<p
+									class="form__input-error-message"
+									role="alert"
+								>
+									Sorry, invalid format here
+								</p>
+							</div>
+						</div>
 
-						<label class="form__label" for="message">
-							message
-						</label>
-						<textarea
-							class="form__input form__input--large"
-							name="MESSAGE"
-							id="message"
-							cols="30"
-							rows="10"
-							placeholder="MESSAGES"
-						></textarea>
+						<div class="form__group">
+							<label class="form__label" for="message">
+								message
+							</label>
+							<textarea
+								class="form__input form__input--large"
+								name="MESSAGE"
+								id="message"
+								cols="30"
+								rows="10"
+								placeholder="MESSAGES"
+							></textarea>
+						</div>
+
 						<button
 							class="form__submit button"
 							type="submit"

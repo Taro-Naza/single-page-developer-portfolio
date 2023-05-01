@@ -12,6 +12,10 @@
 		margin: 0 auto;
 	}
 
+	&__group {
+		position: relative;
+	}
+
 	&__label {
 		position: absolute;
 		width: 1px;
@@ -52,6 +56,24 @@
 		&:focus {
 			outline: none;
 			border-bottom-color: $green;
+		}
+
+		&-error {
+			display: none;
+
+			&-icon {
+				position: absolute;
+				top: 0.9rem;
+				right: 0;
+			}
+
+			&-message {
+				color: $error-red;
+				@include typography($e-fs, $e-fw, $e-lh);
+				position: absolute;
+				bottom: -2.1rem;
+				right: 0;
+			}
 		}
 	}
 
