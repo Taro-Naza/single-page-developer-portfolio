@@ -48,6 +48,7 @@ $green: #4ee1a0;
 $gray: #242424;
 $gray-white: #d9d9d9;
 $white: #fff;
+$error-red: #ff6f5b;
 
 //----------------------------------------------------------------//
 //                           BREAKPOINTS                          //
@@ -86,6 +87,10 @@ $t-s-fw: $fw-medium;
 $b-fs: 1.6rem;
 $b-lh: 2.6rem;
 $b-fw: $fw-bold;
+// Error
+$e-fs: 1.2rem;
+$e-lh: 1.6rem;
+$e-fw: $fw-medium;
 
 //----------------------------------------------------------------//
 //                    DEVICE SPECIFIC (tablet)                    //
