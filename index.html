@@ -21,16 +21,18 @@
 			<div class="header">
 				<div class="header__logo">adamkeyes</div>
 				<div class="header__social">
-					<ul class="header__social-list">
+					<ul class="header__social-list" role="none">
 						<li class="header__social-item">
 							<a
 								class="header__social-link"
 								href="https://github.com/"
+								aria-label="find me on github"
 							>
 								<img
 									class="header__social-icon"
 									src="./assets/images/icon-github.svg"
-									alt=""
+									alt="github logo"
+									role="none"
 								/>
 							</a>
 						</li>
@@ -39,11 +41,13 @@
 							<a
 								class="header__social-link"
 								href="https://frontendmentor.io/"
+								aria-label="find me on frontend mentor"
 							>
 								<img
 									class="header__social-icon"
 									src="./assets/images/icon-frontend-mentor.svg"
-									alt=""
+									alt="frontend mentor logo"
+									role="none"
 								/>
 							</a>
 						</li>
@@ -52,11 +56,13 @@
 							<a
 								class="header__social-link"
 								href="https://linkedin.com/"
+								aria-label="find me on linkedin"
 							>
 								<img
 									class="header__social-icon"
 									src="./assets/images/icon-linkedin.svg"
-									alt=""
+									alt="linkedin logo"
+									role="none"
 								/>
 							</a>
 						</li>
@@ -65,11 +71,13 @@
 							<a
 								class="header__social-link"
 								href="https://twitter.com/"
+								aria-label="find me on twitter"
 							>
 								<img
 									class="header__social-icon"
 									src="./assets/images/icon-twitter.svg"
-									alt=""
+									alt="twitter logo"
+									role="none"
 								/>
 							</a>
 						</li>
@@ -115,22 +123,22 @@
 					<a href="" class="button">contact me</a>
 				</div>
 
-				<div class="hero__decoration-ring">
+				<div class="hero__decoration-ring" aria-hidden="true">
 					<img src="./assets/images/pattern-rings.svg" alt="" />
 				</div>
-				<div class="hero__decoration-circle">
+				<div class="hero__decoration-circle" aria-hidden="true">
 					<img src="./assets/images/pattern-circle.svg" alt="" />
 				</div>
 			</div>
 			<!-- Hero section start -->
-			<div class="hero__separator"></div>
+			<div class="hero__separator" aria-hidden="true"></div>
 		</header>
 		<!-- Header section end -->
 
 		<!-- Main start -->
 		<main class="main">
 			<!-- Skill section start -->
-			<section class="skills">
+			<section class="skills" aria-label="my skills and experience">
 				<div class="skill">
 					<h3 class="skill__heading">HTML</h3>
 					<p class="skill__experience">4 Years Experience</p>
@@ -161,16 +169,16 @@
 					<p class="skill__experience">3 Years Experience</p>
 				</div>
 
-				<div class="skills__decoration-ring">
+				<div class="skills__decoration-ring" aria-hidden="true">
 					<img src="./assets/images/pattern-rings.svg" alt="" />
 				</div>
 
-				<div class="skills__separator"></div>
+				<div class="skills__separator" aria-hidden="true"></div>
 			</section>
 			<!-- Skill section end -->
 
 			<!-- Projects section start -->
-			<section class="projects">
+			<section class="projects" aria-label="my portfolio projects">
 				<div class="projects__header">
 					<h2 class="projects__header-heading">Projects</h2>
 					<a class="button">contact me</a>
@@ -449,7 +457,7 @@
 			<!-- Projects section end -->
 
 			<!-- Contact section start -->
-			<section class="contact">
+			<section class="contact" aria-label="contact form">
 				<div class="contact__wrapper">
 					<div class="contact__text">
 						<h2 class="contact__text-heading">Contact</h2>
@@ -461,7 +469,7 @@
 					</div>
 
 					<form class="form">
-						<label class="form__label" for="name">name</label>
+						<label class="form__label" for="name"> name </label>
 						<input
 							class="form__input"
 							id="name"
@@ -469,7 +477,7 @@
 							placeholder="NAME"
 						/>
 
-						<label class="form__label" for="email">email</label>
+						<label class="form__label" for="email"> email </label>
 						<input
 							class="form__input"
 							id="email"
@@ -477,7 +485,9 @@
 							placeholder="EMAIL"
 						/>
 
-						<label class="form__label" for="message">message</label>
+						<label class="form__label" for="message">
+							message
+						</label>
 						<textarea
 							class="form__input form__input--large"
 							name="MESSAGE"
@@ -486,15 +496,19 @@
 							rows="10"
 							placeholder="MESSAGES"
 						></textarea>
-						<button class="form__submit button" type="submit">
+						<button
+							class="form__submit button"
+							type="submit"
+							role="button"
+						>
 							send message
 						</button>
 					</form>
 				</div>
 
-				<div class="contact__separator"></div>
+				<div class="contact__separator" aria-hidden="true"></div>
 
-				<div class="contact__decoration-ring">
+				<div class="contact__decoration-ring" aria-hidden="true">
 					<img src="./assets/images/pattern-rings.svg" alt="" />
 				</div>
 			</section>
@@ -507,7 +521,7 @@
 			<div class="header">
 				<div class="header__logo">adamkeyes</div>
 				<div class="header__social">
-					<ul class="header__social-list">
+					<ul class="header__social-list" role="none">
 						<li class="header__social-item">
 							<a
 								class="header__social-link"
@@ -516,7 +530,8 @@
 								<img
 									class="header__social-icon"
 									src="./assets/images/icon-github.svg"
-									alt=""
+									alt="github logo"
+									role="none"
 								/>
 							</a>
 						</li>
@@ -529,7 +544,8 @@
 								<img
 									class="header__social-icon"
 									src="./assets/images/icon-frontend-mentor.svg"
-									alt=""
+									alt="frontend mentor logo"
+									role="none"
 								/>
 							</a>
 						</li>
@@ -542,7 +558,8 @@
 								<img
 									class="header__social-icon"
 									src="./assets/images/icon-linkedin.svg"
-									alt=""
+									alt="linkedin logo"
+									role="none"
 								/>
 							</a>
 						</li>
@@ -555,7 +572,8 @@
 								<img
 									class="header__social-icon"
 									src="./assets/images/icon-twitter.svg"
-									alt=""
+									alt="twitter logo"
+									role="none"
 								/>
 							</a>
 						</li>
