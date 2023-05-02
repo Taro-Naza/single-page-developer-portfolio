@@ -11,6 +11,7 @@
 			href="./assets/images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="/css/style.css" />
+		<script async src="./js/index.js"></script>
 
 		<title>Frontend Mentor | Single-page developer portfolio</title>
 	</head>
@@ -477,6 +478,20 @@
 								type="text"
 								placeholder="NAME"
 							/>
+							<div class="form__input-error" data-name>
+								<img
+									class="form__input-error-icon"
+									src="./assets/images/error.svg"
+									alt="error icon"
+									role="none"
+								/>
+								<p
+									class="form__input-error-message"
+									role="alert"
+								>
+									Sorry, invalid format here
+								</p>
+							</div>
 						</div>
 
 						<div class="form__group">
@@ -489,7 +504,7 @@
 								type="email"
 								placeholder="EMAIL"
 							/>
-							<div class="form__input-error">
+							<div class="form__input-error" data-email>
 								<img
 									class="form__input-error-icon"
 									src="./assets/images/error.svg"
@@ -517,6 +532,20 @@
 								rows="10"
 								placeholder="MESSAGES"
 							></textarea>
+							<div class="form__input-error" data-message>
+								<img
+									class="form__input-error-icon"
+									src="./assets/images/error.svg"
+									alt="error icon"
+									role="none"
+								/>
+								<p
+									class="form__input-error-message"
+									role="alert"
+								>
+									Sorry, invalid format here
+								</p>
+							</div>
 						</div>
 
 						<button
