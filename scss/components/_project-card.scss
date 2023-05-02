@@ -46,7 +46,7 @@
 		display: inline-block;
 	}
 
-	& .button {
+	& > .button {
 		@include media('desktop') {
 			display: none;
 		}
