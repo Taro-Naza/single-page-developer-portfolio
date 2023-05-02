@@ -9,7 +9,6 @@ This is a solution to the [Single-page developer portfolio challenge on Frontend
     -   [Screenshot](#screenshot)
 -   [My process](#my-process)
     -   [Built with](#built-with)
-    -   [Continued development](#continued-development)
 -   [Author](#author)
 
 Overview
@@ -33,7 +32,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [Add solution URL here](https://github.com/Taro-Naza/single-page-developer-portfolio 'Github')
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Live Site URL: [Add live site URL here](https://single-portfolio-project-deploy.netlify.app/)
 
 ## My process
 
@@ -43,10 +42,6 @@ Users should be able to:
 -   Flexbox
 -   Mobile-first workflow
 -   SCSS
-
-### Continued development
-
-I want to learn more about web accessibility and incorporate its concepts in my projects more over time.
 
 ## Author
 
