@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshots
 
-![1683051767771](image/README-template/1683051767771.png)
+![Project Screenshot](./assets/screenshots/screenshot_1.png)
 
 ### Links
 
